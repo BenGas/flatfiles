@@ -1,2 +1,9 @@
 <p>adresse au hasard <br/>
    702485 perduville</p>
+
+{% for cour in site.cours %}
+  <li>
+   <img src="{{ cour.thumbnail-path }}" alt="{{ cour.title }}"/>
+    <a href="{{ cour.url }}">{{ cour.title }}</a>
+  </li>
+{% endfor %}
